@@ -6,7 +6,7 @@ http.createServer((request, response) => {
     response.writeHead(200, { 'content-type': 'application-json' });
     response.write(JSON.stringify(data));
     response.end();
-  } else if (request.url === '/') { // 서버가 실행될 때
+  } else if(request.url === '/') { // 서버가 실행될 때
     response.write('Server is running.');
     response.end(); 
   }
